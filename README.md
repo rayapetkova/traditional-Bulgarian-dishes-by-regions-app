@@ -1,2 +1,2 @@
-# traditional-Bulgarian-dishes-by-regions
-My first Tkinter project.
+# Traditional Bulgarian Dishes By Regions App 🥘
+💡 My first Tkinter project
