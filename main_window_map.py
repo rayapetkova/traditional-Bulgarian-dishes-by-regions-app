@@ -8,6 +8,7 @@ class MainWindowMap:
         self.window.title("Traditional Dishes")
         self.window.geometry("1300x650")
         self.window['background'] = '#fae6d4'
+        self.window.iconphoto(False, tk.PhotoImage(file='images/bowl_of_food.png'))
 
         self.frame = tk.Frame(width=1500, height=500)
 
@@ -43,6 +44,51 @@ class MainWindowMap:
                                               bg='#bfd8ff',
                                               cursor='hand2')
         self.north_western_button.place(x=370, y=250)
+
+        self.north_central_button = tk.Button(self.window,
+                                              text='North Central',
+                                              font=("Constantia", 12),
+                                              width=14,
+                                              bd=0,
+                                              bg='#aee8a7',
+                                              cursor='hand2')
+        self.north_central_button.place(x=708, y=203)
+
+        self.north_eastern_button = tk.Button(self.window,
+                                              text='North Eastern',
+                                              font=("Constantia", 12),
+                                              width=14,
+                                              bd=0,
+                                              bg='#cceb8a',
+                                              cursor='hand2')
+        self.north_eastern_button.place(x=860, y=250)
+
+        self.south_western_button = tk.Button(self.window,
+                                              text='South Western',
+                                              font=("Constantia", 12),
+                                              width=14,
+                                              bd=0,
+                                              bg='#faa5a5',
+                                              cursor='hand2')
+        self.south_western_button.place(x=270, y=425)
+
+        self.south_central_button = tk.Button(self.window,
+                                              text='South Central',
+                                              font=("Constantia", 12),
+                                              width=14,
+                                              bd=0,
+                                              bg='#fad5a7',
+                                              cursor='hand2')
+        self.south_central_button.place(x=510, y=490)
+
+        self.south_eastern_button = tk.Button(self.window,
+                                              text='South Eastern',
+                                              font=("Constantia", 12),
+                                              width=14,
+                                              bd=0,
+                                              bg='#fff799',
+                                              cursor='hand2')
+        self.south_eastern_button.place(x=740, y=380)
 
     def start_main_window(self):
         self.window.mainloop()
