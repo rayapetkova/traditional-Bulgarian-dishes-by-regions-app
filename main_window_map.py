@@ -1,6 +1,7 @@
 import tkinter as tk
 from PIL import ImageTk, Image
-from new_window_for_each_region.north_western import NorthWesternFrame
+from base_region_class_structure import BaseRegion
+from helpers import clean_widgets_from_frame
 
 
 class MainWindowMap:
@@ -56,7 +57,8 @@ class MainWindowMap:
                                               width=14,
                                               bd=0,
                                               bg='#aee8a7',
-                                              cursor='hand2')
+                                              cursor='hand2',
+                                              command=self.north_central_region)
         self.north_central_button.place(x=708, y=203)
 
         self.north_eastern_button = tk.Button(self.frame,
@@ -99,10 +101,46 @@ class MainWindowMap:
         self.window.mainloop()
 
     def north_western_region(self):
-        for widgets in self.frame.winfo_children():
-            widgets.destroy()
+        clean_widgets_from_frame(self.frame)
 
-        new_frame = NorthWesternFrame(self.window)
+        new_frame = BaseRegion(self.window,
+                               'North Western Region', 'north_western_region',
+                               'lyutika', 'Lyutika',
+                               'Traditional vegetable mixture - \nsalad or chunky relish, popular in \nthe '
+                               'northern part of Bulgaria.\nIt is consumed in the summer.',
+                               228, 320, 200, 495,
+
+                               'turlashka_banitsa', 'Turlashka Banitsa',
+                               'One of the most iconic dishes of the \nregion.nThe dough '
+                               'is divided and \nrolled out into squares to be baked \non '
+                               'the top of a wood-burning stove.',
+                               534, 320, 573, 495,
+
+                               'kosachko_kiselo', 'Kosachko Kiselo',
+                               'A cold and refreshing soup that is \ntraditionally prepared '
+                               'only \nin Torlashko and only in summer.',
+                               928, 320, 962, 495)
+        self.frame = new_frame
+
+    def north_central_region(self):
+        clean_widgets_from_frame(self.frame)
+
+        new_frame = BaseRegion(self.window,
+                               'North Central Region', 'north_central_region',
+                               'makarina', 'Makarina',
+                               'A traditional Bulgarian banitsa \nthat consists of several layers of \nfilo dough '
+                               'and filling. It is \nconsumed during holidays.',
+                               205, 320, 190, 495,
+
+                               'oven_baked_mish_mash', 'Oven-Baked Mish-Mash',
+                               'A typical dish of the region, which \ndiffers from the usual mish-mash '
+                               '\nbecause it contains cheese \nand is not cooked in a pan.',
+                               498, 320, 573, 495,
+
+                               'piltseta', 'Piltseta',
+                               'A popular dish that can be \nserved with yogurt at various \n'
+                               'holidays and family gatherings. \nThey can be consumed hot or cold.',
+                               990, 320, 962, 495)
         self.frame = new_frame
 
 
