@@ -2,6 +2,7 @@ import tkinter as tk
 from PIL import ImageTk, Image
 from base_region_class_structure import BaseRegion
 from helpers import clean_widgets_from_frame
+from regions_functions import *
 
 
 class MainWindowMap:
@@ -67,7 +68,8 @@ class MainWindowMap:
                                               width=14,
                                               bd=0,
                                               bg='#cceb8a',
-                                              cursor='hand2')
+                                              cursor='hand2',
+                                              command=self.north_eastern_region)
         self.north_eastern_button.place(x=860, y=250)
 
         self.south_western_button = tk.Button(self.frame,
@@ -76,7 +78,8 @@ class MainWindowMap:
                                               width=14,
                                               bd=0,
                                               bg='#faa5a5',
-                                              cursor='hand2')
+                                              cursor='hand2',
+                                              command=self.south_western_region)
         self.south_western_button.place(x=270, y=425)
 
         self.south_central_button = tk.Button(self.frame,
@@ -103,44 +106,25 @@ class MainWindowMap:
     def north_western_region(self):
         clean_widgets_from_frame(self.frame)
 
-        new_frame = BaseRegion(self.window,
-                               'North Western Region', 'north_western_region',
-                               'lyutika', 'Lyutika',
-                               'Traditional vegetable mixture - \nsalad or chunky relish, popular in \nthe '
-                               'northern part of Bulgaria.\nIt is consumed in the summer.',
-                               228, 320, 200, 495,
-
-                               'turlashka_banitsa', 'Turlashka Banitsa',
-                               'One of the most iconic dishes of the \nregion.nThe dough '
-                               'is divided and \nrolled out into squares to be baked \non '
-                               'the top of a wood-burning stove.',
-                               534, 320, 573, 495,
-
-                               'kosachko_kiselo', 'Kosachko Kiselo',
-                               'A cold and refreshing soup that is \ntraditionally prepared '
-                               'only \nin Torlashko and only in summer.',
-                               928, 320, 962, 495)
+        new_frame = north_western(self.window)
         self.frame = new_frame
 
     def north_central_region(self):
         clean_widgets_from_frame(self.frame)
 
-        new_frame = BaseRegion(self.window,
-                               'North Central Region', 'north_central_region',
-                               'makarina', 'Makarina',
-                               'A traditional Bulgarian banitsa \nthat consists of several layers of \nfilo dough '
-                               'and filling. It is \nconsumed during holidays.',
-                               205, 320, 190, 495,
+        new_frame = north_central(self.window)
+        self.frame = new_frame
 
-                               'oven_baked_mish_mash', 'Oven-Baked Mish-Mash',
-                               'A typical dish of the region, which \ndiffers from the usual mish-mash '
-                               '\nbecause it contains cheese \nand is not cooked in a pan.',
-                               498, 320, 573, 495,
+    def north_eastern_region(self):
+        clean_widgets_from_frame(self.frame)
 
-                               'piltseta', 'Piltseta',
-                               'A popular dish that can be \nserved with yogurt at various \n'
-                               'holidays and family gatherings. \nThey can be consumed hot or cold.',
-                               990, 320, 962, 495)
+        new_frame = north_eastern(self.window)
+        self.frame = new_frame
+
+    def south_western_region(self):
+        clean_widgets_from_frame(self.frame)
+
+        new_frame = south_western(self.window)
         self.frame = new_frame
 
 
