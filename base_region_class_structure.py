@@ -90,7 +90,7 @@ class BaseRegion:
                                           text=f"{desc_dish3}",
                                           font=("Constantia", 14),
                                           width=27,
-                                          height=4)
+                                          height=5)
         self.third_description.place(x=882, y=365)
         self.recipe_button().place(x=d3_b_x, y=d3_b_y)
 
