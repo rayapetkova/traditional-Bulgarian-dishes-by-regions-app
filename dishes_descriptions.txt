@@ -7,3 +7,14 @@
 - 'A traditional Bulgarian banitsa \nthat consists of several layers of \nfilo dough and filling. It is \nconsumed during holidays.'
 - 'A typical dish of the region, which \ndiffers from the usual mish-mash \nbecause it contains cheese \nand is not cooked in a pan.'
 - 'A popular dish that can be \nserved with yogurt at various \nholidays and family gatherings. \nThey can be consumed hot or cold.'
+
+3. North Eastern Region:
+- 'Thin, flat breads that are known for \ntheir crispy texture and taste. \nThey are made from rolled dough and \nare usually cooked on a hot griddle.'
+- 'A classic green banitsa with cheese \nand eggs, in which boiled or fried \nsaturated fresh cabbage is \nadded. Leeks can also be added.'
+- "Traditional dish that showcases \nthe region's proximity to the \nBlack Sea. It is commonly served \nduring the summer months."
+
+
+4. South Western Region:
+- 'A typical dish from Bansko, \nwhere the tradition is still \npreserved and is shared at the \ntable by many Bulgarians.'
+- 'A lean dish from traditional cuisine \nin Bansko. On Christmas Eve, \nan odd number of lean \ndishes are put on the table, and \nthis can be one of them.'
+- 'This popular dish is a delicacy \nfrom the Pirin region. It is served \nhot and is usually accompanied \nby fried potatoes or bread.'
