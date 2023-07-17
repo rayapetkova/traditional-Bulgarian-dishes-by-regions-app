@@ -49,7 +49,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#bfd8ff',
                                               cursor='hand2',
-                                              command=self.north_western_region)
+                                              command=lambda: self.open_region(north_western))
         self.north_western_button.place(x=370, y=250)
 
         self.north_central_button = tk.Button(self.frame,
@@ -59,7 +59,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#aee8a7',
                                               cursor='hand2',
-                                              command=self.north_central_region)
+                                              command=lambda: self.open_region(north_central))
         self.north_central_button.place(x=708, y=203)
 
         self.north_eastern_button = tk.Button(self.frame,
@@ -69,7 +69,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#cceb8a',
                                               cursor='hand2',
-                                              command=self.north_eastern_region)
+                                              command=lambda: self.open_region(north_eastern))
         self.north_eastern_button.place(x=860, y=250)
 
         self.south_western_button = tk.Button(self.frame,
@@ -79,7 +79,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#faa5a5',
                                               cursor='hand2',
-                                              command=self.south_western_region)
+                                              command=lambda: self.open_region(south_western))
         self.south_western_button.place(x=270, y=425)
 
         self.south_central_button = tk.Button(self.frame,
@@ -103,28 +103,10 @@ class MainWindowMap:
     def start_main_window(self):
         self.window.mainloop()
 
-    def north_western_region(self):
+    def open_region(self, region_func):
         clean_widgets_from_frame(self.frame)
 
-        new_frame = north_western(self.window)
-        self.frame = new_frame
-
-    def north_central_region(self):
-        clean_widgets_from_frame(self.frame)
-
-        new_frame = north_central(self.window)
-        self.frame = new_frame
-
-    def north_eastern_region(self):
-        clean_widgets_from_frame(self.frame)
-
-        new_frame = north_eastern(self.window)
-        self.frame = new_frame
-
-    def south_western_region(self):
-        clean_widgets_from_frame(self.frame)
-
-        new_frame = south_western(self.window)
+        new_frame = region_func(self.window)
         self.frame = new_frame
 
 
