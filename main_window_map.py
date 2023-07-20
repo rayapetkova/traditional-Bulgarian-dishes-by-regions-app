@@ -27,7 +27,6 @@ class MainWindowMap:
         self.map_image = ImageTk.PhotoImage(self.resized_map_image)
         self.label_image = tk.Label(self.frame, image=self.map_image)
         self.label_image.place(x=190, y=90)
-        # self.label_image.pack()
 
         self.title_main_window_label = tk.Label(self.frame,
                                                 bg='#fae6d4',
