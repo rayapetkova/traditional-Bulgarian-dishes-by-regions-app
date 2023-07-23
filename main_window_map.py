@@ -87,7 +87,8 @@ class MainWindowMap:
                                               width=14,
                                               bd=0,
                                               bg='#fad5a7',
-                                              cursor='hand2')
+                                              cursor='hand2',
+                                              command=lambda: self.open_region(south_central))
         self.south_central_button.place(x=510, y=490)
 
         self.south_eastern_button = tk.Button(self.frame,
@@ -107,7 +108,3 @@ class MainWindowMap:
 
         new_frame = region_func(self.window)
         self.frame = new_frame
-
-
-mainw = MainWindowMap()
-mainw.start_main_window()

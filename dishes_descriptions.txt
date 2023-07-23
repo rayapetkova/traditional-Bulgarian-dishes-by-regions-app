@@ -18,3 +18,9 @@
 - 'A typical dish from Bansko, \nwhere the tradition is still \npreserved and is shared at the \ntable by many Bulgarians.'
 - 'A lean dish from traditional cuisine \nin Bansko. On Christmas Eve, \nan odd number of lean \ndishes are put on the table, and \nthis can be one of them.'
 - 'This popular dish is a delicacy \nfrom the Pirin region. It is served \nhot and is usually accompanied \nby fried potatoes or bread.'
+
+
+5. South Central Region:
+- 'A traditional Bulgarian potato-based \ndish characteristic of the Rhodope \nMountains. It is prepared with \ngrated potatoes and onions.'
+- 'Rich set of vegetables, meat \n/ pork, beef or sheep /, \nall chopped in a traditional way \nand baked in clay pots.'
+- 'Rice and Feta Phyllo Burek from \nRhodope Mountains. The dish \nis mainly made of phyllo \ndough sheets, cheese and rice.'

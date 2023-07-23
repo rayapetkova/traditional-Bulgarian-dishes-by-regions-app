@@ -86,3 +86,24 @@ def south_western(main_window):
                             975, 320, 962, 495)
 
     return curr_frame
+
+
+def south_central(main_window):
+    curr_frame = BaseRegion(main_window,
+                            'South Central Region', 'south_central_region',
+                            'patatnik', 'Patatnik',
+                            'A traditional Bulgarian potato-based \ndish characteristic of the Rhodope \nMountains. '
+                            'It is prepared with \ngrated potatoes and onions.',
+                            220, 320, 190, 495,
+
+                            'thracian_gyuvetch', 'Thracian Gyuvetch',
+                            'Rich set of vegetables, meat \n/ pork, beef or sheep /, \nall chopped in a '
+                            'traditional way \nand baked in clay pots.',
+                            530, 320, 573, 495,
+
+                            'rice_burek', 'Rice Burek',
+                            'Rice and Feta Phyllo Burek from \nRhodope Mountains. The dish \n'
+                            'is mainly made of phyllo \ndough sheets, cheese and rice.',
+                            965, 320, 962, 495)
+
+    return curr_frame
