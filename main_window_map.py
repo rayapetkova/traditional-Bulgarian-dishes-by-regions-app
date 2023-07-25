@@ -97,7 +97,8 @@ class MainWindowMap:
                                               width=14,
                                               bd=0,
                                               bg='#fff799',
-                                              cursor='hand2')
+                                              cursor='hand2',
+                                              command=lambda: self.open_region(south_eastern))
         self.south_eastern_button.place(x=740, y=380)
 
     def start_main_window(self):

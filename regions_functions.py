@@ -107,3 +107,24 @@ def south_central(main_window):
                             965, 320, 962, 495)
 
     return curr_frame
+
+
+def south_eastern(main_window):
+    curr_frame = BaseRegion(main_window,
+                            'South Eastern Region', 'south_eastern_region',
+                            'milinki', 'Milinki',
+                            'Traditional Bulgarian Bread \nRolls from Sliven Region. They are \nmade with '
+                            'chickpea starter and \ntheir taste is truly unique.',
+                            220, 320, 190, 495,
+
+                            'turlyugyuvech', 'Turlyugyuvech',
+                            'Dish of meat and various vegetables \ncooked together. The products \nare mixed in '
+                            'a clay pot and \nvarious spices are added.',
+                            555, 320, 573, 495,
+
+                            'jujube_jam', 'Jujube Jam',
+                            'Jujube grows in certain areas. \nIt is medicinal and regulates \ncholesterol '
+                            'and for this reason \njujube jam is very useful.',
+                            965, 320, 962, 495)
+
+    return curr_frame
