@@ -10,7 +10,7 @@ class MainWindowMap:
         self.window = tk.Tk()
         self.window.title("Traditional Dishes")
         self.window.geometry("1300x650")
-        self.window.iconphoto(False, tk.PhotoImage(file='images/bowl_of_food.png'))
+        self.window.iconphoto(False, tk.PhotoImage(file='images/bowl_of_food_window_img.png'))
 
         self.frame = tk.Frame(self.window,
                               width=1300,
