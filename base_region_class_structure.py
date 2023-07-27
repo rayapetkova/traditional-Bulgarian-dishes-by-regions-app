@@ -94,6 +94,16 @@ class BaseRegion:
         self.third_description.place(x=882, y=365)
         self.recipe_button().place(x=d3_b_x, y=d3_b_y)
 
+        self.back_button = tk.Button(self.frame,
+                                     text='Back',
+                                     bg='#e3d2c3',
+                                     font=("Constantia", 12),
+                                     width=20,
+                                     height=2,
+                                     bd=1,
+                                     cursor='hand2')
+        self.back_button.place(x=556, y=565)
+
     def recipe_button(self):
         recipe_button = tk.Button(self.frame,
                                   text='Recipe',
