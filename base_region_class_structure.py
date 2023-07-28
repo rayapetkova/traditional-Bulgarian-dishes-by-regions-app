@@ -3,9 +3,8 @@ from PIL import ImageTk, Image
 
 
 class BaseRegion:
-    def __init__(self, window, title, region, dish1, title_dish1, desc_dish1, d1_t_x, d1_t_y, d1_b_x, d1_b_y, dish2,
-                 title_dish2, desc_dish2, d2_t_x, d2_t_y, d2_b_x, d2_b_y, dish3, title_dish3, desc_dish3, d3_t_x, d3_t_y,
-                 d3_b_x, d3_b_y):
+    def __init__(self, window, title, region, dish1, title_dish1, desc_dish1, d1_t_x, d1_t_y, dish2,
+                 title_dish2, desc_dish2, d2_t_x, d2_t_y, dish3, title_dish3, desc_dish3, d3_t_x, d3_t_y):
 
         self.frame = tk.Canvas(window,
                                width=1300,
@@ -42,7 +41,7 @@ class BaseRegion:
                                           width=27,
                                           height=5)
         self.first_description.place(x=115, y=365)
-        self.recipe_button().place(x=d1_b_x, y=d1_b_y)
+        # self.recipe_button().place(x=d1_b_x, y=d1_b_y)
 
         # Open the image
         self.second_img = Image.open(f"images/{region}/{dish2}.png")
@@ -67,7 +66,7 @@ class BaseRegion:
                                            width=27,
                                            height=5)
         self.second_description.place(x=500, y=365)
-        self.recipe_button().place(x=d2_b_x, y=d2_b_y)
+        # self.recipe_button().place(x=d2_b_x, y=d2_b_y)
 
         # Open the image
         self.third_img = Image.open(f"images/{region}/{dish3}.png")
@@ -92,7 +91,7 @@ class BaseRegion:
                                           width=27,
                                           height=5)
         self.third_description.place(x=882, y=365)
-        self.recipe_button().place(x=d3_b_x, y=d3_b_y)
+        # self.recipe_button().place(x=d3_b_x, y=d3_b_y)
 
         self.back_button = tk.Button(self.frame,
                                      text='Back',
@@ -102,15 +101,15 @@ class BaseRegion:
                                      height=2,
                                      bd=1,
                                      cursor='hand2')
-        self.back_button.place(x=556, y=565)
+        self.back_button.place(x=556, y=525)
 
-    def recipe_button(self):
-        recipe_button = tk.Button(self.frame,
-                                  text='Recipe',
-                                  font=("Constantia", 12),
-                                  width=17,
-                                  bd=0,
-                                  bg='#e3d2c3',
-                                  cursor='hand2')
-
-        return recipe_button
+    # def recipe_button(self):
+    #     recipe_button = tk.Button(self.frame,
+    #                               text='Recipe',
+    #                               font=("Constantia", 12),
+    #                               width=17,
+    #                               bd=0,
+    #                               bg='#e3d2c3',
+    #                               cursor='hand2')
+    #
+    #     return recipe_button
