@@ -1,7 +1,6 @@
 import tkinter as tk
 from PIL import ImageTk, Image
-from base_region_class_structure import BaseRegion
-from helpers import clean_widgets_from_frame
+import helpers
 from regions_functions import *
 
 
@@ -105,7 +104,7 @@ class MainWindowMap:
         self.window.mainloop()
 
     def open_region(self, region_func):
-        clean_widgets_from_frame(self.frame)
+        helpers.clean_widgets_from_frame(self.frame)
 
         new_frame = region_func(self.window)
         self.frame = new_frame

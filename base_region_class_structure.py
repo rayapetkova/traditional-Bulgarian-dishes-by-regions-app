@@ -1,6 +1,9 @@
 import tkinter as tk
 from PIL import ImageTk, Image
 
+import helpers
+import main_window_map
+
 
 class BaseRegion:
     def __init__(self, window, title, region, dish1, title_dish1, desc_dish1, d1_t_x, d1_t_y, dish2,
@@ -100,8 +103,13 @@ class BaseRegion:
                                      width=20,
                                      height=2,
                                      bd=1,
-                                     cursor='hand2')
+                                     cursor='hand2',
+                                     command=self.back_button_functionality)
         self.back_button.place(x=556, y=525)
+
+    def back_button_functionality(self):
+        helpers.clean_widgets_from_frame(self.frame)
+
 
     # def recipe_button(self):
     #     recipe_button = tk.Button(self.frame,
