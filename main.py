@@ -1,4 +1,3 @@
-from main_window_map import MainWindowMap
+import main_window_map
 
-main_window = MainWindowMap()
-main_window.start_main_window()
+main_window_map.start_app()
