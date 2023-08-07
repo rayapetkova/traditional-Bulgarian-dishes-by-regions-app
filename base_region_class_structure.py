@@ -6,10 +6,13 @@ import main_window_map
 
 
 class BaseRegion:
-    def __init__(self, window, title, region, dish1, title_dish1, desc_dish1, d1_t_x, d1_t_y, dish2,
+    def __init__(self, window, curr_frame, title, region, dish1, title_dish1, desc_dish1, d1_t_x, d1_t_y, dish2,
                  title_dish2, desc_dish2, d2_t_x, d2_t_y, dish3, title_dish3, desc_dish3, d3_t_x, d3_t_y):
 
-        self.frame = tk.Canvas(window,
+        self.window = window
+        self.curr_frame = curr_frame
+
+        self.frame = tk.Canvas(self.window,
                                width=1300,
                                height=650,
                                bg='#fae6d4')

@@ -1,9 +1,8 @@
 from base_region_class_structure import BaseRegion
-from helpers import clean_widgets_from_frame
 
 
-def north_western(main_window):
-    curr_frame = BaseRegion(main_window,
+def north_western(main_window, main_frame):
+    curr_frame = BaseRegion(main_window, main_frame,
                             'North Western Region', 'north_western_region',
                             'lyutika', 'Lyutika',
                             'Traditional vegetable mixture - \nsalad or chunky relish, popular in \nthe '
@@ -24,8 +23,8 @@ def north_western(main_window):
     return curr_frame
 
 
-def north_central(main_window):
-    curr_frame = BaseRegion(main_window,
+def north_central(main_window, main_frame):
+    curr_frame = BaseRegion(main_window, main_frame,
                             'North Central Region', 'north_central_region',
                             'makarina', 'Makarina',
                             'A traditional Bulgarian banitsa \nthat consists of several layers of \nfilo dough '
@@ -45,8 +44,8 @@ def north_central(main_window):
     return curr_frame
 
 
-def north_eastern(main_window):
-    curr_frame = BaseRegion(main_window,
+def north_eastern(main_window, main_frame):
+    curr_frame = BaseRegion(main_window, main_frame,
                             'North Eastern Region', 'north_eastern_region',
                             'plateki', 'Plateki',
                             'Thin, flat breads that are known for \ntheir crispy texture and taste. \n'
@@ -67,8 +66,8 @@ def north_eastern(main_window):
     return curr_frame
 
 
-def south_western(main_window):
-    curr_frame = BaseRegion(main_window,
+def south_western(main_window, main_frame):
+    curr_frame = BaseRegion(main_window, main_frame,
                             'South Western Region', 'south_western_region',
                             'banska_kapama', 'Banska Kapama',
                             'A typical dish from Bansko, \nwhere the tradition is still \npreserved and is shared '
@@ -88,8 +87,8 @@ def south_western(main_window):
     return curr_frame
 
 
-def south_central(main_window):
-    curr_frame = BaseRegion(main_window,
+def south_central(main_window, main_frame):
+    curr_frame = BaseRegion(main_window, main_frame,
                             'South Central Region', 'south_central_region',
                             'patatnik', 'Patatnik',
                             'A traditional Bulgarian potato-based \ndish characteristic of the Rhodope \nMountains. '
@@ -109,8 +108,8 @@ def south_central(main_window):
     return curr_frame
 
 
-def south_eastern(main_window):
-    curr_frame = BaseRegion(main_window,
+def south_eastern(main_window, main_frame):
+    curr_frame = BaseRegion(main_window, main_frame,
                             'South Eastern Region', 'south_eastern_region',
                             'milinki', 'Milinki',
                             'Traditional Bulgarian Bread \nRolls from Sliven Region. They are \nmade with '
