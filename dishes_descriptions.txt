@@ -24,3 +24,8 @@
 - 'A traditional Bulgarian potato-based \ndish characteristic of the Rhodope \nMountains. It is prepared with \ngrated potatoes and onions.'
 - 'Rich set of vegetables, meat \n/ pork, beef or sheep /, \nall chopped in a traditional way \nand baked in clay pots.'
 - 'Rice and Feta Phyllo Burek from \nRhodope Mountains. The dish \nis mainly made of phyllo \ndough sheets, cheese and rice.'
+
+6. South Eastern Region:
+- 'Traditional Bulgarian Bread \nRolls from Sliven Region. They are \nmade with chickpea starter and \ntheir taste is truly unique.'
+- 'Dish of meat and various vegetables \ncooked together. The products \nare mixed in a clay pot and \nvarious spices are added.'
+- 'Jujube grows in certain areas. \nIt is medicinal and regulates \ncholesterol and for this reason \njujube jam is very useful.'
