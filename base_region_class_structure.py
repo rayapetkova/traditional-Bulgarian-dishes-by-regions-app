@@ -1,7 +1,5 @@
 import tkinter as tk
 from PIL import ImageTk, Image
-
-import helpers
 import main_window_map
 
 
@@ -10,7 +8,6 @@ class BaseRegion:
                  title_dish2, desc_dish2, d2_t_x, d2_t_y, dish3, title_dish3, desc_dish3, d3_t_x, d3_t_y):
 
         self.window = window
-        self.curr_frame = curr_frame
 
         self.frame = tk.Canvas(self.window,
                                width=1300,
@@ -111,16 +108,5 @@ class BaseRegion:
         self.back_button.place(x=556, y=525)
 
     def back_button_functionality(self):
-        helpers.clean_widgets_from_frame(self.frame)
-
-
-    # def recipe_button(self):
-    #     recipe_button = tk.Button(self.frame,
-    #                               text='Recipe',
-    #                               font=("Constantia", 12),
-    #                               width=17,
-    #                               bd=0,
-    #                               bg='#e3d2c3',
-    #                               cursor='hand2')
-    #
-    #     return recipe_button
+        self.window.destroy()
+        main_window_map.start_app()
