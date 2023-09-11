@@ -1,7 +1,7 @@
 import tkinter as tk
 from PIL import ImageTk, Image
 import helpers
-from regions_functions import *
+import regions_functions
 
 
 class MainWindowMap:
@@ -9,7 +9,7 @@ class MainWindowMap:
         self.window = tk.Tk()
         self.window.title("Traditional Dishes")
         self.window.geometry("1300x650")
-        self.window.iconphoto(False, tk.PhotoImage(file='images/bowl_of_food_window_img.png'))
+        # self.window.iconphoto(False, tk.PhotoImage(file='images/bowl_of_food_window_img.png'))
 
         self.frame = tk.Frame(self.window,
                               width=1300,
@@ -47,7 +47,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#bfd8ff',
                                               cursor='hand2',
-                                              command=lambda: self.open_region(north_western))
+                                              command=lambda: self.open_region(regions_functions.north_western))
         self.north_western_button.place(x=370, y=250)
 
         self.north_central_button = tk.Button(self.frame,
@@ -57,7 +57,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#aee8a7',
                                               cursor='hand2',
-                                              command=lambda: self.open_region(north_central))
+                                              command=lambda: self.open_region(regions_functions.north_central))
         self.north_central_button.place(x=708, y=203)
 
         self.north_eastern_button = tk.Button(self.frame,
@@ -67,7 +67,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#cceb8a',
                                               cursor='hand2',
-                                              command=lambda: self.open_region(north_eastern))
+                                              command=lambda: self.open_region(regions_functions.north_eastern))
         self.north_eastern_button.place(x=860, y=250)
 
         self.south_western_button = tk.Button(self.frame,
@@ -77,7 +77,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#faa5a5',
                                               cursor='hand2',
-                                              command=lambda: self.open_region(south_western))
+                                              command=lambda: self.open_region(regions_functions.south_western))
         self.south_western_button.place(x=270, y=425)
 
         self.south_central_button = tk.Button(self.frame,
@@ -87,7 +87,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#fad5a7',
                                               cursor='hand2',
-                                              command=lambda: self.open_region(south_central))
+                                              command=lambda: self.open_region(regions_functions.south_central))
         self.south_central_button.place(x=510, y=490)
 
         self.south_eastern_button = tk.Button(self.frame,
@@ -97,7 +97,7 @@ class MainWindowMap:
                                               bd=0,
                                               bg='#fff799',
                                               cursor='hand2',
-                                              command=lambda: self.open_region(south_eastern))
+                                              command=lambda: self.open_region(regions_functions.south_eastern))
         self.south_eastern_button.place(x=740, y=380)
 
     def start_main_window(self):
