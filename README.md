@@ -6,7 +6,7 @@
 
 ## 📖 Description
 
-The Traditional Bulgarian Dishes by Regions App is a Python application built with the Tkinter library that allows users to explore and discover traditional Bulgarian dishes organized by different regions of Bulgaria.
+The 'Traditional Bulgarian Dishes by Regions App' is a Python application built with the Tkinter library that allows users to explore and discover traditional Bulgarian dishes organized by different regions of Bulgaria.
 
 ## 🖼️ Screenshots - two examples
 
