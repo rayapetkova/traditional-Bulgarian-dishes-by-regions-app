@@ -100,16 +100,10 @@ class MainWindowMap:
                                               command=lambda: self.open_region(regions_functions.south_eastern))
         self.south_eastern_button.place(x=740, y=380)
 
-    def start_main_window(self):
-        self.window.mainloop()
-
     def open_region(self, region_func):
         new_frame = region_func(self.window, self.frame)
         helpers.clean_widgets_from_frame(self.frame)
         self.frame = new_frame
-
-    def hide(self):
-        self.window.withdraw()
 
 
 def start_app():
