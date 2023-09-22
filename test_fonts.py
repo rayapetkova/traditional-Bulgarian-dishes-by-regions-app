@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import font
 
 
+'''SEE THE LIST OF AVAILABLE FONTS IN TKINTER'''
 def preview_fonts():
     root = tk.Tk()
     root.title("Font Styles Preview")
